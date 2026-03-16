@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Converter</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bodytag">
+        <div class="container">
+            <h2 class="title">CYBER<span class="glow">CONVERT</span></h2>
+            
+            <div class="input-group">
+                <input type="number" class="ip1" placeholder="Enter value...">
+                <select id="unitSelector">
+                    <option value="nothing">SELECT UNIT</option>
+                    <option value="cm">CM</option>
+                    <option value="feet">FEET</option>
+                    <option value="miles">MILES</option>
+                </select>
+            </div>
+
+            <button class="btn-neon">INITIALIZE</button>
+
+            <div class="data-container">
+                <div class="result-box">
+                    <span class="label">MILES</span>
+                    <span class="value miles">--</span>
+                </div>
+                <div class="result-box">
+                    <span class="label">CM</span>
+                     <span class="value cm">--</span>
+                </div>
+                <div class="result-box">
+                    <span class="label">FEET</span>
+                     <span class="value feet">--</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
