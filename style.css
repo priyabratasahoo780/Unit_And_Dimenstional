@@ -14,15 +14,16 @@ body {
 }
 
 .container {
-    width: 360px;
-    padding: 30px;
+    width: 95%;
+    max-width: 450px;
+    padding: 25px;
     background: #111;
     border: 2px solid #0ff;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 
 .title {
@@ -79,16 +80,18 @@ input:focus, select:focus {
 
 .data-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
 .result-box {
-    flex: 1;
+    flex: 1 1 120px;
     background: #1a1a1a;
     border: 1px solid #333;
-    padding: 10px 5px;
+    padding: 12px 5px;
     text-align: center;
+    min-width: 100px;
 }
 
 .label {
@@ -103,3 +106,35 @@ input:focus, select:focus {
     font-size: 14px;
     word-break: break-all;
 }
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ui-label {
+    font-size: 10px;
+    color: #f0f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+.ui-label.center {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.status-msg {
+    color: #0ff;
+    text-align: center;
+    font-size: 11px;
+    height: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.btn-neon {
+    margin-top: 10px;
+}

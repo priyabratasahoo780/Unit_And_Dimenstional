@@ -12,19 +12,35 @@
         <div class="container">
             <h2 class="title">CYBER<span class="glow">CONVERT</span></h2>
             
-            <div class="input-group">
-                <input type="number" class="ip1" placeholder="Enter value...">
+            <div class="input-section">
+                <span class="ui-label">ENTER VALUE</span>
+                <input type="number" class="ip1" placeholder="Type here...">
+                
+                <span class="ui-label">FROM UNIT</span>
                 <select id="unitSelector">
                     <option value="nothing">SELECT UNIT</option>
-                    <option value="cm">CM</option>
-                    <option value="feet">FEET</option>
-                    <option value="miles">MILES</option>
+                    <option value="km">KILOMETERS (KM)</option>
+                    <option value="meter">METERS (M)</option>
+                    <option value="cm">CENTIMETERS (CM)</option>
+                    <option value="feet">FEET (FT)</option>
+                    <option value="miles">MILES (MI)</option>
                 </select>
             </div>
 
-            <button class="btn-neon">INITIALIZE</button>
+            <button class="btn-neon">INITIALIZE CONVERSION</button>
+            
+            <div id="statusLabel" class="status-msg"></div>
 
+            <span class="ui-label center">TO ALL UNITS</span>
             <div class="data-container">
+                <div class="result-box">
+                    <span class="label">KILOMETERS</span>
+                    <span class="value km">--</span>
+                </div>
+                <div class="result-box">
+                    <span class="label">METERS</span>
+                    <span class="value meter">--</span>
+                </div>
                 <div class="result-box">
                     <span class="label">MILES</span>
                     <span class="value miles">--</span>

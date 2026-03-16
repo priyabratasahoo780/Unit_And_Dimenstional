@@ -1,4 +1,4 @@
-function miles(a){
-    return a*0.621371;
+function miles(km) {
+    return km * 0.621371;
 }
 export default miles;

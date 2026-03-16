@@ -1,4 +1,4 @@
-function feet(a){
-    return a * 3280.84;
+function feet(km) {
+    return km * 3280.84;
 }
 export default feet;
